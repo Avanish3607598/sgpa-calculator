@@ -131,9 +131,8 @@ res.addEventListener('click', () => {
         showres.className = "yellowclass"
     
     else showres.className = "redclass"
-        showres.innerHTML = `Your SGPA = ${sgpa.toFixed(1)}`
-
-
+    showres.innerHTML = `Your SGPA = ${sgpa.toFixed(1)}`
+   
     verifier=0;
  }
  else alert(`First insert data`)
