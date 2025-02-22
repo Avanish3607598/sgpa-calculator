@@ -131,8 +131,8 @@ res.addEventListener('click', () => {
         showres.className = "yellowclass"
     
     else showres.className = "redclass"
-    showres.innerHTML = `Your SGPA = ${sgpa}`
-   // document.getElementById("cont").appendChild(showres)
+        showres.innerHTML = `Your SGPA = ${sgpa.toFixed(1)}`
+
 
     verifier=0;
  }
