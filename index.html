@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SGPA Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3758f80f07.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="contanier" id="cont">
-     
-
       <div class="content">
-
- <header>
-        <h1 class="maintitle"><b>SGPA Calculator</b></h1>
-      </header>
+        <header>
+          <h1 class="maintitle"><b>SGPA Calculator</b></h1>
+        </header>
 
         <div class="main">
           <label for="subs">Subject Name</label>
           <input type="text" id="subs" placeholder="subject" />
-          <label for="tmarks">Total Marks</label>
-          <input type="number" id="mmarks" placeholder="total marks" />
 
-          <label for="omarks">Obtained Marks</label>
+          <!-- <label for="tmarks">Total Marks</label>
+          <input type="number" id="mmarks" placeholder="total marks" /> -->
+
+          <label class="find" for="omarks"
+            >Obtained Marks <span class="warning">(out of 100)</span></label
+          >
           <input type="number" id="omarks" placeholder="obtained marks" />
 
           <label for="credit">Subject Credit</label>
           <input type="number" id="credit" placeholder="credit" />
-          
 
           <div class="bgroup">
-            <button id="add">Add Subject</button>
-            <button id="calc">Calculate SGPA</button>
+            <button class="add" id="add">Add Subject</button>
+         
           </div>
         </div>
       </div>
-
-      <footer>
-        <div class="maintable">
-          <table>
+      <div class="toggler" id="ptable">
+      <div class="maintable">
+          <table class="storingdata">
             <caption>
               <h2>You Entered</h2>
             </caption>
@@ -47,18 +49,20 @@
                 <td>Sr</td>
                 <td>Sub</td>
                 <td>Marks</td>
-                <td>M.M.</td>
+                <!-- <td>M.M.</td> -->
                 <td>Credit</td>
                 <td>Grade P</td>
-                <td>Grade </td>
+                <td>Grade</td>
               </tr>
             </thead>
             <tbody id="tablebody"></tbody>
           </table>
         </div>
-        
-        <h3 class="sgpaclass" id="sgpaid"></h3>
-      </footer>
+        <div class="foot vis">
+          <h3 class="sgpaclass" id="sgpaid"></h3>
+          <button id="clear" class="clear">Clear</button>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
