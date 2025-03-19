@@ -37,13 +37,16 @@ label {
   display: block;
 }
 button {
+  border-radius: 5px;
+  transition: 0.1s linear;
+  font-size: 20px;
+  font-weight: bold;
+}
+.add {
   color: white;
   border: 2px solid green;
   background-color: rgb(87, 139, 87);
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: 0.1s linear;
+
   width: 100%;
   padding: 5px 30px;
 }
@@ -91,7 +94,6 @@ table {
 .redclass {
   color: red;
 }
-
 
 @media (min-width: 720px) {
   .contanier {
@@ -144,13 +146,24 @@ table {
   background-color: rgb(253, 72, 72);
   border: 2px solid red;
   width: 40%;
-
   height: 40px;
+  color: white;
 }
 .foot {
   display: flex;
   justify-content: space-between;
   align-items: self-start;
   margin-top: 10px;
- 
+}
+
+.edit_button {
+  width: 90%;
+  background-color: rgb(253, 72, 72);
+  border: 2px solid red;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 2px;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
 }
