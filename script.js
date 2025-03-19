@@ -40,16 +40,7 @@ add.addEventListener("click", () => {
     let gradepoint = Math.floor(marks / 10) + 1;
     if (gradepoint <= 4) gradepoint = 0;
 
-    let grade;
-    switch (gradepoint) {
-        case 10: grade = "S"; break;
-        case 9: grade = "A"; break;
-        case 8: grade = "B"; break;
-        case 7: grade = "C"; break;
-        case 6: grade = "D"; break;
-        case 5: grade = "E"; break;
-        default: grade = "F";
-    }
+
 
   
     let entry = { id: sr, credit, gradepoint };
@@ -77,7 +68,7 @@ add.addEventListener("click", () => {
         <td>${marks}/100</td> 
         <td>${credit}</td>
         <td>${gradepoint}</td>
-        <td>${grade}</td> 
+       
         <td></td>  
     `;
     newRow.lastElementChild.appendChild(button2);
